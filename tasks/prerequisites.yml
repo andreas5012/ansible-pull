@@ -5,8 +5,8 @@
 
 - name: enable service cron and start it
   ansible.builtin.systemd_service:
-    name: crond
-    enabled: true
+    name: cron
+    daemon_reload: true
     state: started
 
 
