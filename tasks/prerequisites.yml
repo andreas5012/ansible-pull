@@ -4,7 +4,7 @@
       - cron
 
 - name: enable service cron and start it
-  systemd: :
+  systemd:
     name: cron
     state: started
 
