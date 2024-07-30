@@ -2,3 +2,11 @@
   apt:
     name:
       - cron
+
+- name: enable service cron and start it
+  ansible.builtin.systemd_service:
+    name: crond
+    enabled: true
+    state: started
+
+
