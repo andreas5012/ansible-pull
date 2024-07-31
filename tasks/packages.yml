@@ -1,7 +1,8 @@
-- name: Install packages
+- name: uninstall packages
   apt:
     name:
       - htop
       - mc
       - tmux
       - vim
+    state: absent
